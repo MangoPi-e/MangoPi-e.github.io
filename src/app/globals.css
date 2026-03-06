@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+:root 
+{/*dark bloodborne theme*/
+  --bg: #0b0c10;          /* void background */
+  --surface: #15171c;     /* stone surface */
+  --text: #e6e1d9;        /* bone text */
+  --muted: #9ca3af;       /* fog gray */
+  --border: #2a2e35;      /* iron border */
+  --accent: #7f1d1d;      /* deep blood */
+  --glow: #3b82f6;        /* cold moon glow */
+}
+.light
+{/*light hollow knight theme*/
+--bg: #f5f3ea;          /* pale ivory */
+  --surface: #ffffff;     
+  --text: #1f2937;        
+  --muted: #6b7280;       
+  --border: #e5e7eb;      
+  --accent: #d4af37;      /* radiant gold */
+  --glow: #fde047;        /* soft radiant glow */ 
+}
+
+body 
+{
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+a
+{
+  color: var(--accent);
+}
+
+::selection
+{/*Text selection*/
+  background: color-mix(in srgb, var(--accent) 35%, transparent);
+}
