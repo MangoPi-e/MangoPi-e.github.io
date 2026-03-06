@@ -1,4 +1,5 @@
 name: Deploy Next.js (static export) to GitHub Pages
+run-name: Deploy to GitHub Pages
 
 on:
   push:
